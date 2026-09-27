@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Admin Dashboard - Smart Campus</title><link rel="stylesheet" href="style.css"></head>
+<body><header class="navbar"><div class="brand">Smart<span>Campus</span></div><nav><a href="index.html">Student Portal</a><a href="admin.html">Admin Dashboard</a></nav></header>
+<main class="admin-main"><div class="section-heading"><p class="eyebrow">ADMIN PORTAL</p><h1>Issue Management Dashboard</h1><p>Review reported campus issues and update their status.</p></div>
+<section class="stats"><div class="stat card"><span id="total">0</span><small>Total Issues</small></div><div class="stat card"><span id="pending">0</span><small>Pending</small></div><div class="stat card"><span id="progress">0</span><small>In Progress</small></div><div class="stat card"><span id="resolved">0</span><small>Resolved</small></div></section>
+<section class="card table-card"><div class="table-header"><h2>Reported Issues</h2><button class="btn secondary" onclick="clearIssues()">Clear Demo Data</button></div>
+<div class="table-wrap"><table><thead><tr><th>Student</th><th>Category</th><th>Location</th><th>Priority</th><th>Description</th><th>Status</th></tr></thead><tbody id="adminIssues"></tbody></table></div></section>
+</main><footer>Smart Campus Issue Reporting App · Admin Dashboard</footer><script src="admin.js"></script></body></html>

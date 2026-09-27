@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Smart Campus - Issue Reporting</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar"><div class="brand">Smart<span>Campus</span></div>
+<nav><a href="#home">Home</a><a href="#report">Report Issue</a><a href="#issues">My Issues</a><a href="admin.html">Admin Dashboard</a></nav></header>
+<main>
+<section id="home" class="hero"><div><p class="eyebrow">SMART CAMPUS</p><h1>Report campus issues. <span>Track solutions.</span></h1>
+<p class="hero-text">A simple platform for students to report campus problems and follow their resolution status.</p>
+<a href="#report" class="btn">Report an Issue</a></div>
+<div class="hero-card"><div class="icon">📢</div><h3>Make your campus better</h3><p>Report maintenance, cleanliness, infrastructure and other campus concerns in one place.</p></div></section>
+
+<section id="report" class="section"><div class="section-heading"><p class="eyebrow">STUDENT PORTAL</p><h2>Report an Issue</h2></div>
+<form id="issueForm" class="card form-grid">
+<label>Student Name<input id="studentName" required placeholder="Enter your name"></label>
+<label>Category<select id="category" required><option value="">Select category</option><option>Infrastructure</option><option>Cleanliness</option><option>Electrical</option><option>Water</option><option>Internet</option><option>Other</option></select></label>
+<label>Location<input id="location" required placeholder="Example: Block A, Room 204"></label>
+<label>Priority<select id="priority"><option>Low</option><option selected>Medium</option><option>High</option></select></label>
+<label class="full">Issue Description<textarea id="description" rows="5" required placeholder="Describe the issue clearly..."></textarea></label>
+<button class="btn full">Submit Report</button><p id="message" class="message full"></p>
+</form></section>
+
+<section id="issues" class="section"><div class="section-heading"><p class="eyebrow">TRACKING</p><h2>Recently Reported Issues</h2></div><div id="issueList" class="issue-list"></div></section>
+</main><footer>Smart Campus Issue Reporting App · Design Thinking Project</footer>
+<script src="script.js"></script>
+</body></html>
